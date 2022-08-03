@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB CSS-->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <style>
+        .detail-container {
+  box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+  .product {
+    height: 700px;
+    position: relative;
+    .color{
+      span{
+        padding-top: 6px !important;
+        margin:2px;
+        &:hover{
+          transition: all .2s linear;
+          box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+        }
+      }
+    }
+    button{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.2);
+    }
+  }
+  .detail{
+    background: #0a5061;
+    .desc{
+      position: relative;
+      div{
+        position: absolute;
+        right: 10%;
+        font-size: 15px;
+        color: black !important;
+      }
+    }
+   .price{
+      font-size: 25px;
+      font-weight: 600;
+    }
+    button, select{
+      height: 40px;
+      width: 100px;
+    }
+    .fa-share-square-o{
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      color: white;
+    }
+  }
+}
+
+body{
+  background: -o-linear-gradient(0deg, #1ea982, #1ea982);
+  background: -webkit-linear-gradient(0deg, #1e7080, #1ea982);
+}
+    </style>
+
+
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="detail-container rounded my-5 row">
+          <div class="col-md-12 ">
+            <div class="row">
+              <div class="rounded-left col-md-6 product bg-white">
+                <img class="mt-5"
+                     src="http://static2.netshoes.net/Produtos/tenis-nike-md-runner-2/58/D12-1407-058/D12-1407-058_zoom1.jpg" width=100% alt="">
+                   <div class="color text-center">
+                     <h5 class="mb-4">Colors</h5>
+                     <span class="bg-info px-3 py-1 rounded-circle"></span>
+                     <span class="bg-warning px-3 py-1 rounded-circle"></span>
+                     <span class="bg-danger px-3 py-1 rounded-circle"></span>
+                   </div>
+                   <button class="rounded-0 btn btn-warning">View Full Detail</button>
+              </div>
+              <div class="rounded-right col-md-6 detail bg-dange pb-5">
+                <div class="logo text-white text-center mt-5">
+                  <img src="https://seeklogo.com/images/N/nike-logo-47A65A59D5-seeklogo.com.png" alt="" width=200 class="text-white">
+                </div>
+                <h5 class="px-1 desc mt-5 text-white text-center">Lorem ipsum lorem ipsum dolores queira
+                <div class="text-muted">#74515-554</div>
+                </h5>
+                <div class="py-5 px-4">
+                  Inspirado nos calçados retrô, o Tênis Nike Md Runner 2 garante um visual esportivo clássico para seu dia a dia. Possui tecnologia Phylon, espuma macia que proporciona um amortecimento leve.
+                </div>
+                <div class="text-center price">
+                  
+                  <span>$286 of</span> <span class="text-warning">$290</span>
+                </div>
+                <div class="text-center mt-4">
+                  <select class="btn bg-info mr-2">
+                    <option value="Size">Size</option>
+                    <option value="Size">43</option>
+                    <option value="Size">42</option>
+                    <option value="Size">44</option>
+                  </select>
+                  <button class="btn bg-warning ml-5">Add to cart</button>
+                </div>
+                <i class="fa fa-share-square-o" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body> 
+  <!-- MDB JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript">
+  
+  </script>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB CSS-->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <!-- Custom styles -->
+    <style>
+        body{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(
+      to right,
+      hsl(125, 84%, 35%) 0,
+     hsl(0, 0%, 100%) 10%,
+     hsl(125, 84%, 35%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4.5s infinite linear;
+}
+
+@keyframes shine {
+0% {
+background-position: 0;
+}
+60% {
+background-position: 600px;
+}
+100% {
+background-position: 600px;
+}
+  }
+
+
+#small{
+  font-size: 11px;
+}
+
+  h2{
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(125, 84%, 35%);
+  }
+
+  .suprcon{
+    background-color:hsl(125, 84%, 55%);
+
+  }
+  .nav-nav{
+    padding: 0.2rem 0.7rem;
+    
+  }
+  .nav-a{
+    color: hsl(125, 84%, 55%);
+  }
+  .active{
+    color: hsl(125, 84%, 30%);
+    padding: 0.2rem 0.7rem;
+    box-shadow: 0px 0px 10px greenyellow;
+  }
+  .nav-a:hover{
+    color: white;   
+  }
+  .nav-nav:hover{
+    background-color: hsl(125, 84%, 50%);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(49, 236, 86);
+  }
+  .gts-btn{
+    background-color: hsl(125, 84%, 50%);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(49, 236, 86);
+    }
+  .CatofMonth{
+    padding-top: 2rem;
+    font-size: 2.4rem;
+    font-weight: 200;
+    text-align: center;
+  }
+.featCat{
+    padding: 3rem;
+  background-image: radial-gradient(
+      521px circle at 0% 0%,
+      hsl(125, 84%, 44%) 20%,
+      hsl(125, 84%, 50%) 32%,
+      hsl(125, 84%, 55%) 40%,
+      hsl(125, 84%, 63%) 60%,
+      transparent 100%),
+      radial-gradient(
+      510px circle at 100% 100%,
+      hsl(125, 84%, 44%) 20%,
+      hsl(125, 84%, 50%) 32%,
+      hsl(125, 84%, 55%) 40%,
+      hsl(125, 84%, 63%) 60%,
+      transparent 100%)
+      ;
+}
+
+
+
+    </style>
+  </head>
+
+  <body >
+  <header > 
+    <div class="  d-flex justify-content-center h-100 bg-white">
+        <h1 > Z a y   S h <i class="fa fa-circle text-success" style="font-size: 25px;" alt="o" aria-hidden="true"></i> p </h1>
+      </div>
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm  navbar-light bg-white" style="box-shadow: none;">
+            <div class="container-fluid mx-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-center mx-auto" id="navbarID">
+                    
+                    <br>
+                    <div class="navbar-nav nav-nav">
+                        <a href="header.html"  class="nav-a active">Home</a>
+                    </div>
+                    <div class="nav-nav navbar-nav">
+                        <a class=" nav-a" aria-current="page" href="shop.html">Shop</a>
+                    </div>
+                    <div class="navbar-nav nav-nav ">
+                        <a class=" nav-a" aria-current="page" href="about.html">About</a>
+                    </div>
+                    <div class="navbar-nav nav-nav">
+                        <a class="nav-a" aria-current="page" href="contact.html">Contact Us</a>
+                    </div>
+                    <div class="navbar-nav nav-nav">
+                      <a class="nav-a" aria-current="page" href="Profile.html">Profile</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>  
+    </header>
+
+        <!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" style="background-color: #efefef;" data-mdb-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+  
+    <!-- Inner -->
+    <div class="carousel-inner" style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="container">
+            <div class="row p-5">
+                <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                    <img class="img-fluid" src="img/banner_img_01.jpg" alt="">
+                </div>
+                <div class="col-lg-6 mb-0 d-flex align-items-center">
+                    <div class="text-align-left align-self-center">
+                        <h3 class="h2" >Dont have any <b> Footwear? </b></h3>
+                        <p class="lead">
+                            We got you covered, Go Check out our awesome Footwear Collection
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+      </div>
+      
+      <!-- Single item 2 -->
+      <div class="carousel-item ">
+        <div class="container">
+            <div class="row p-5">
+                <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                    <img class="img-fluid" src="img/banner_img_02.jpg" alt="">
+                </div>
+                <div class="col-lg-6 mb-0 d-flex align-items-center">
+                    <div class="text-align-left align-self-center">
+                        <h1 class="h1 text-success"><b></b>Curology</h1>
+                        <h3 class="h2">Love Skincare Products?</h3>
+                        <p>
+                            Take care of Your precious skin with our high quality Skin Care Products.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+      <!-- Single item -->
+      <div class="carousel-item ">
+        <div class="container">
+            <div class="row p-5">
+                <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                    <img class="img-fluid" src="img/banner_img_03.jpg" alt="">
+                </div>
+                <div class="col-lg-6 mb-0 d-flex align-items-center">
+                    <div class="text-align-left align-self-center">
+                        <h1 class="h1 text-success"><b>Zay</b> eCommerce</h1>
+                        <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
+                        <p>
+                            Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). 
+                            This template is 100% free provided by <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank">TemplateMo</a> website. 
+                            Image credits go to <a rel="sponsored" class="text-success" href="https://stories.freepik.com/" target="_blank">Freepik Stories</a>,
+                            <a rel="sponsored" class="text-success" href="https://unsplash.com/" target="_blank">Unsplash</a> and
+                            <a rel="sponsored" class="text-success" href="https://icons8.com/" target="_blank">Icons 8</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel wrapper -->    
+        </div>
+
+    <div style="background-color: #efefef;">
+        <div class="container h-100 bg-white">
+            <div class="CatofMonth h-100 p-5">
+                <div class="topcat">
+                        <h2 style="font-size: 2.3rem; font-weight:200;">Categories of the Month</h2>
+                    <p class="lead">
+                        Here are the Top Categories of the Month
+                    </p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-3">
+                            <img src="img/category_img_01.jpg" alt="" class="img-fluid" >
+                            <h2 style="font-size: 1.6rem; font-weight:400; margin-top: 1rem;">Watches</h2>
+                            <div class="gtshop_btn gts-btn">
+                                <a href="#" class="nav-a text-white" style="font-size:1.3rem; ">Go to Shop</a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/category_img_02.jpg" alt="" class="img-fluid" >
+                            <h2 style="font-size: 1.6rem; font-weight:400; margin-top: 1rem;">Shoes</h2>
+                            <div class="gtshop_btn gts-btn">
+                                <a href="#" class="nav-a text-white" style="font-size:1.3rem;">Go to Shop</a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/category_img_03.jpg" alt="" class="img-fluid" >
+                            <h2 style="font-size: 1.6rem; font-weight:400; margin-top: 1rem;">Glasses</h2>
+                            <div class="gtshop_btn gts-btn">
+                                <a href="#" class="nav-a text-white" style="font-size:1.3rem; ">Go to Shop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="FeaturedContainer">
+                <div class="featCat">
+                    <div class="row">
+                        <div class="col"><h2 style="font-size: 2.3rem; font-weight:200; margin: 1rem 0rem;" class="text-white">Featured Products</h2>
+                        </div>
+                        <div class="col"><h2 style="font-size: 2.3rem; font-weight:200; margin: 1rem 0rem;" class="text-success">Handpicked Products</h2></div>
+                    </div>
+                    <!-- <div class="row d-flex justify-content-center">
+                        <div class="col-3">
+                            <img src="img/category_img_01.jpg" alt="" class="img-fluid" >
+                            <h2 style="font-size: 1.6rem; font-weight:400; margin-top: 1rem;">Watches</h2>
+                            <div class="gtshop_btn gts-btn">
+                                <a href="#" class="nav-a text-white" style="font-size:1.3rem; ">Go to Shop</a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/category_img_02.jpg" alt="" class="img-fluid" >
+                            <h2 style="font-size: 1.6rem; font-weight:400; margin-top: 1rem;">Shoes</h2>
+                            <div class="gtshop_btn gts-btn">
+                                <a href="#" class="nav-a text-white" style="font-size:1.3rem;">Go to Shop</a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img src="img/category_img_03.jpg" alt="" class="img-fluid" >
+                            <h2 style="font-size: 1.6rem; font-weight:400; margin-top: 1rem;">Glasses</h2>
+                            <div class="gtshop_btn gts-btn">
+                                <a href="#" class="nav-a text-white" style="font-size:1.3rem; ">Go to Shop</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <section >
+                        <div class="container py-5">
+                          <div class="row">
+                            <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+                              <div class="card">
+                                <div class="d-flex justify-content-between p-3">
+                                  <p class="lead mb-0">Today's Combo Offer</p>
+                                  <div
+                                    class="bg-success rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                                    style="width: 35px; height: 35px;">
+                                    <p class="text-white mb-0 small">x4</p>
+                                  </div>
+                                </div>
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/4.webp"
+                                  class="card-img-top" alt="Laptop" />
+                                <div class="card-body">
+                                  <div class="d-flex justify-content-between">
+                                    <p class="small"><a href="#!" class="text-muted">Laptops</a></p>
+                                    <p class="small text-danger"><s>$1099</s></p>
+                                  </div>
+                      
+                                  <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">HP Notebook</h5>
+                                    <h5 class="text-dark mb-0">$999</h5>
+                                  </div>
+                      
+                                  <div class="d-flex justify-content-between mb-2">
+                                    <p class="text-muted mb-0">Available: <span class="fw-bold">6</span></p>
+                                    <div class="ms-auto text-warning">
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                              <div class="card">
+                                <div class="d-flex justify-content-between p-3">
+                                  <p class="lead mb-0">Today's Combo Offer</p>
+                                  <div
+                                    class="bg-success rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                                    style="width: 35px; height: 35px;">
+                                    <p class="text-white mb-0 small">x2</p>
+                                  </div>
+                                </div>
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/7.webp"
+                                  class="card-img-top" alt="Laptop" />
+                                <div class="card-body">
+                                  <div class="d-flex justify-content-between">
+                                    <p class="small"><a href="#!" class="text-muted">Laptops</a></p>
+                                    <p class="small text-danger"><s>$1199</s></p>
+                                  </div>
+                      
+                                  <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">HP Envy</h5>
+                                    <h5 class="text-dark mb-0">$1099</h5>
+                                  </div>
+                      
+                                  <div class="d-flex justify-content-between mb-2">
+                                    <p class="text-muted mb-0">Available: <span class="fw-bold">7</span></p>
+                                    <div class="ms-auto text-warning">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                              <div class="card">
+                                <div class="d-flex justify-content-between p-3">
+                                  <p class="lead mb-0">Today's Combo Offer</p>
+                                  <div
+                                    class="bg-success rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                                    style="width: 35px; height: 35px;">
+                                    <p class="text-white mb-0 small">x3</p>
+                                  </div>
+                                </div>
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/5.webp"
+                                  class="card-img-top" alt="Gaming Laptop" />
+                                <div class="card-body">
+                                  <div class="d-flex justify-content-between">
+                                    <p class="small"><a href="#!" class="text-muted">Laptops</a></p>
+                                    <p class="small text-danger"><s>$1399</s></p>
+                                  </div>
+                      
+                                  <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Toshiba B77</h5>
+                                    <h5 class="text-dark mb-0">$1299</h5>
+                                  </div>
+                      
+                                  <div class="d-flex justify-content-between mb-2">
+                                    <p class="text-muted mb-0">Available: <span class="fw-bold">5</span></p>
+                                    <div class="ms-auto text-warning">
+                                      <i class="fa fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+
+                </div>
+            </div>  
+            <div class="divsep" style="background-color: white; height:5vh;">
+
+            </div>
+        </div>      
+</div>
+            <!--Footer-->
+             <footer style="background-color: #efefef; " class="page-footer center-on-small-only pt-0">
+
+                 <!--Footer Links-->
+                 <div class="container" style="padding-top: 3rem;" >
+
+                     <!--Grid row-->
+                     <div class="row pt-5 mb-3 text-center d-flex justify-content-center" >
+
+                         <!--Grid column-->
+                         <div class="col-md-2 mb-3">
+                             <h6 class="title font-bold"><a href="header.html" class="text-success">Home</a></h6>
+                         </div>
+                         <!--Grid column-->
+
+                         <!--Grid column-->
+                         <div class="col-md-2 mb-3">
+                             <h6 class="title font-bold"><a href="shop.html" class="text-success">Shop</a></h6>
+                         </div>
+                         <!--Grid column-->
+
+                         <!--Grid column-->
+                         <div class="col-md-2 mb-3">
+                             <h6 class="title font-bold"><a href="about.html" class="text-success">About</a></h6>
+                         </div>
+                         <!--Grid column-->
+
+                         <!--Grid column-->
+                         <div class="col-md-2 mb-3">
+                             <h6 class="title font-bold "><a href="shop.html" class="text-success">Contact Us</a></h6>
+                         </div>
+
+                     </div>
+                     <!--Grid row-->
+
+                     <hr class="rgba-white-light" style="margin: 0 15%;">
+
+                     <!--Grid row-->
+                     <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+                         <!--Grid column-->
+                         <div class="col-md-8 col-12 mt-5">
+                             <p style="line-height: 1.7rem" class="text-success">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                                 totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                                 vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                                 aut fugit, sed quia consequuntur.</p>
+
+                         </div>
+                         <!--Grid column-->
+
+                     </div>
+                     <!--Grid row-->
+
+                     <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+                 </div>
+                 <!--/Footer Links-->
+
+                 <!--Copyright-->
+                 <div class="footer-copyright ">
+                     <div class="container-fluid bg-success text-center text-white">
+                         © 2016 Copyright: <a href="#"> HabshiDev </a>
+                     </div>
+                 </div>
+                 <!--/Copyright-->
+             </footer>
+             <!--/Footer-->
+                                  
+ 
+ 
+
+ 
+
+  </body>
+
+  <!-- MDB JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript">
+  
+  </script>
+</html>

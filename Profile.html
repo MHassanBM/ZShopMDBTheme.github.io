@@ -18,9 +18,121 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Custom styles -->
     <style>
+        body{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(
+      to right,
+      hsl(125, 84%, 35%) 0,
+     hsl(0, 0%, 100%) 10%,
+     hsl(125, 84%, 35%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4.5s infinite linear;
+}
+
+@keyframes shine {
+0% {
+background-position: 0;
+}
+60% {
+background-position: 600px;
+}
+100% {
+background-position: 600px;
+}
+  }
+
+
+#small{
+  font-size: 11px;
+}
+
+  h2{
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(125, 84%, 35%);
+  }
+
+  .suprcon{
+    background-color:hsl(125, 84%, 55%);
+
+  }
+  .nav-nav{
+    padding: 0.2rem 0.7rem;
+    
+  }
+  .nav-a{
+    color: hsl(125, 84%, 55%);
+  }
+  .active{
+    color: hsl(125, 84%, 30%);
+    padding: 0.2rem 0.7rem;
+    box-shadow: 0px 0px 10px greenyellow;
+  }
+  .nav-a:hover{
+    color: white;   
+  }
+  .nav-nav:hover{
+    background-color: hsl(125, 84%, 50%);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(49, 236, 86);
+  }
+  .gts-btn{
+    background-color: hsl(125, 84%, 50%);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(49, 236, 86);
+    }
+  .CatofMonth{
+    padding-top: 2rem;
+    font-size: 2.4rem;
+    font-weight: 200;
+    text-align: center;
+  }
+.featCat{
+    padding: 3rem;
+  background-image: radial-gradient(
+      521px circle at 0% 0%,
+      hsl(125, 84%, 44%) 20%,
+      hsl(125, 84%, 50%) 32%,
+      hsl(125, 84%, 55%) 40%,
+      hsl(125, 84%, 63%) 60%,
+      transparent 100%),
+      radial-gradient(
+      510px circle at 100% 100%,
+      hsl(125, 84%, 44%) 20%,
+      hsl(125, 84%, 50%) 32%,
+      hsl(125, 84%, 55%) 40%,
+      hsl(125, 84%, 63%) 60%,
+      transparent 100%)
+      ;
+}
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+.personalInfo{
+    background: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 300;    
+}
+
 
     </style>
-  </head>
+</head>
 
   <body>
 
@@ -39,10 +151,10 @@
                         
                         <br>
                           <div class="navbar-nav nav-nav">
-                        <a href="Profile.html"  class="nav-a "><i class="fa fa-user" aria-hidden="true"></i></a>
+                        <a href="Profile.html"  class="nav-a active"><i class="fa fa-user" aria-hidden="true"></i></a>
                     </div>    
                         <div class="navbar-nav nav-nav">
-                            <a href="header.html"  class="nav-a ">Home</a>
+                            <a href="index.html"  class="nav-a ">Home</a>
                         </div>
                         <div class="nav-nav navbar-nav">
                             <a class=" nav-a" aria-current="page" href="shop.html">Shop</a>
@@ -54,9 +166,6 @@
                             <a class="nav-a " aria-current="page " href="contact.html">Contact Us</a>
                         </div>
                           
-                        <div class="navbar-nav nav-nav">
-                          <a class="nav-a active" aria-current="page" href="Profile.html">Profile</a>
-                        </div>
                           <div class="navbar-nav nav-nav">
                       <a class="nav-a " aria-current="page" href="cart.html"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
                     </div>
@@ -65,8 +174,34 @@
             </nav>  
         </header>
       
-    <main>
-        
+    <main style="background-color: #efefef;">
+          <!-- Jumbotron -->
+        <div class=" text-center bg-light">
+            <div class="row">
+                <div class="col " style="background-color: #efefef;">
+                    <div class="container row ">
+                        <div class="col d-flex" >
+                            <img src="img/DP.jpg" style="border: 2px solid white; margin-top: 15px;" height="250" width="250">
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-end" >
+                            <h2 class="text-success ">A c c o u n t D e t a i l s</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container  p-5" >
+                <div class="text-center personalInfo ">
+                    Name : Muhammad Hassan <br>
+                    Email : masoodhassan655@gmail.com <br>
+                    CNIC : 325019875661 <br>
+                    Phone Number : 0330418795 <br>
+                    Account Type : Buyer <br>
+                    City : Lahore <br>
+                    Address : H-6 S-2 Near Railway Police Station 
+                </div>
+        </div>
+
     </main>
 
     <footer style="background-color: #efefef;" class="page-footer center-on-small-only pt-0">
